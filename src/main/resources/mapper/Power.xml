@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 映射文件中的namespace是用于绑定Dao接口的，即面向接口编程 -->
+<mapper namespace="com.cn.dao.PowerDao">
+    <!--根据用户名查询所有的权限-->
+    <select id="getPermission" parameterType="String" resultType="String">
+		select power.permission
+		from power,user,user_role,role_power
+		where
+		power.id=role_power.power_id and user_role.role_id=role_power.role_id
+		and user_role.user_id=user.id and user.username=#{username}
+	</select>
+    <!--根据用户名修改角色-->
+    <update id="editfindIdByRolePower">
+		update user_role,user set user_role.role_id=#{id} where user.id = user_role.id and username=#{username}
+	</update>
+    <!--根据用户查找相应角色的id-->
+    <select id="findIdBypermission" parameterType="String" resultType="Integer">
+		select role_id from role_power,power where power.id = role_power.power_id and power.permission = #{permission}
+	</select>
+    <!--修改用户角色关系-->
+    <update id="editPower">
+		update user ,user_role set user_role.role_id=#{id} where user.username=#{username} and user.id=user_role.user_id
+	</update>
+    <!--查询角色是否存在-->
+    <select id="checkRole" parameterType="String" resultType="role">
+		select * from role where role=#{role}
+	</select>
+    <!--插入新的角色-->
+    <insert id="creatNewRole" parameterType="String">
+		insert into role(role)
+		values(#{role})
+	</insert>
+    <!--根据角色查询相应的id-->
+    <select id="findIdByRole" parameterType="String" resultType="Integer">
+		select id from role where role.role=#{role}
+	</select>
+    <!--根据权限查询相应id-->
+    <select id="findIdByPower" parameterType="String" resultType="Integer">
+		select id from power where permission=#{power}
+	</select>
+    <!--创建新的角色权限关联，新增角色权限-->
+    <insert id="creatNewRolePower">
+		insert into role_power(role_id,power_id)
+		values(#{id1},#{id2})
+	</insert>
+    <!--查询所有的角色-->
+    <select id="findAllRole" resultType="role">
+        select * from role
+    </select>
+    <!--更改用户角色权限关系，修改角色权限关联-->
+    <insert id="updateRolePower">
+		insert into role_power(role_id,power_id)
+		values(#{id_role},#{id_permission})
+    </insert>
+    <!--根据Id删除所有的权限角色关联-->
+    <delete id="deleteAllRoleAndPowerById" parameterType="Integer">
+		delete from role_power where role_id=#{id}
+	</delete>
+    <select id="findPowerId" parameterType="String" resultType="Integer">
+		select id from power where permission=#{permission}
+	</select>
+</mapper>

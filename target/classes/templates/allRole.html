@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>人员管理</title>
+</head>
+<body>
+<!-- 人员管理页面 -->
+<table>
+    <tr>
+        <td><h2>您好;</h2></td>
+        <td><h2 th:text="${USER}"></h2></td>
+        <td><a th:href="@{/logoff}"><h4>点击注销</h4></a></td>
+    </tr>
+    <tr>
+        <td><a th:href="@{/myMessage}"><h4>我的文章</h4></a></td>
+        <td><a th:href="@{/messageAll}"><h4>文章总部</h4></a></td>
+        <td><a th:href="@{/roleEdit}"><h4>人员管理</h4></a></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><h4>更改用户角色：</h4></td>
+    </tr>
+    <tr>
+        <td>选择人员：</td>
+        <td><select th:id="userPower">
+            <option>··请选择··</option>
+            <div th:each="list4:${list4}">
+            <option th:text="${list4['username']}"></option>
+        </div>
+            <td>选择角色：</td>
+        </select></td>
+        <td><select th:id="power">
+            <option>··请选择··</option>
+            <div th:each="list6:${list6}">
+                <option th:text="${list6['role']}"></option>
+            </div>
+        </select></td>
+        <td><input th:type="button" th:value="提交修改" onclick="checkPower()"/></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><h4>新建角色：</h4></td>
+    </tr>
+    <tr>
+        <td>输入角色名：</td>
+        <td><input th:type="text" th:id="newRole" onblur="checkRole()"></td>
+        <td>赋予权限：</td>
+        </select></td>
+        <td><select th:id="permission" th:multiple="true">
+            <option>··选择权限··</option>
+            <option>查看</option>
+            <option>删除</option>
+            <option>修改</option>
+            <option>管人</option>
+        </select></td>
+        <td><input th:type="button" th:value="创建" onclick="creatNewRole()"></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><h4>更改角色权限：</h4></td>
+    </tr>
+    <tr>
+        <td>选择角色：</td>
+        <td><select th:id="selectRole">
+            <option>··请选择··</option>
+            <div th:each="list6:${list6}">
+                <option th:text="${list6['role']}"></option>
+            </div>
+        <td>修改权限：</td>
+        </select></td>
+        <td><select th:id="selectPermission" th:multiple="true">
+            <option>··选择权限··</option>
+            <option>查看</option>
+            <option>删除</option>
+            <option>修改</option>
+            <option>管人</option>
+        </select></td>
+        <td><input th:type="button" th:value="提交更改" onclick="changePermission()"></td>
+    </tr>
+</table>
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/my_js/allRole.js"></script>
+</body>
+</html>

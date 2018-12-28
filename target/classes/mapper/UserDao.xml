@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+    <!-- 映射文件中的namespace是用于绑定Dao接口的，即面向接口编程 -->																																													
+<mapper namespace="com.cn.dao.UserDao">
+   <!-- 查询用户名和密码 -->
+    <select id="findUser" parameterType="User" resultType="User">
+        select * from user where username=#{username} and password=#{password}
+    </select>
+       <!-- 根据用户名查询用户 -->
+    <select id="findByName" parameterType="String" resultType="User">
+        select * from user where username=#{username}
+    </select>
+       <!-- 添加用户-->
+    <insert id="addUser" parameterType="User">
+        insert into user(username,number,password)
+        values(#{username},#{number},#{password})
+    </insert>
+       <!-- 根据密码查询是否存在，返回查询的个数 -->
+    <select id="findByPassword" parameterType="String" resultType="Integer">
+        select count(*) from user where password=#{password}
+    </select>
+
+    <!--查询所有用户-->
+	<select id="findAllUser" resultType="User">
+		select * from user
+	</select>
+
+
+
+</mapper>

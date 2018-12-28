@@ -1,0 +1,270 @@
+2018-12-19 19:04:35.002  INFO 14192 --- [restartedMain] com.cn.ThirdApplication                  : Starting ThirdApplication on DESKTOP-J7NHTAC with PID 14192 (D:\javapro\third02\target\classes started by lenovo in D:\javapro\third02)
+2018-12-19 19:04:35.003 DEBUG 14192 --- [restartedMain] com.cn.ThirdApplication                  : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2018-12-19 19:04:35.003  INFO 14192 --- [restartedMain] com.cn.ThirdApplication                  : No active profile set, falling back to default profiles: default
+2018-12-19 19:04:35.202  WARN 14192 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cn.dao.UserDao]' package. Please check your configuration.
+2018-12-19 19:04:41.248  INFO 10836 --- [restartedMain] com.cn.ThirdApplication                  : Starting ThirdApplication on DESKTOP-J7NHTAC with PID 10836 (D:\javapro\third02\target\classes started by lenovo in D:\javapro\third02)
+2018-12-19 19:04:41.253 DEBUG 10836 --- [restartedMain] com.cn.ThirdApplication                  : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2018-12-19 19:04:41.255  INFO 10836 --- [restartedMain] com.cn.ThirdApplication                  : No active profile set, falling back to default profiles: default
+2018-12-19 19:04:41.324  INFO 10836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-12-19 19:04:41.324  INFO 10836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2018-12-19 19:04:41.805  WARN 10836 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cn.dao.UserDao]' package. Please check your configuration.
+2018-12-19 19:04:42.624  INFO 10836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-19 19:04:42.639  INFO 10836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-19 19:04:42.640  INFO 10836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-19 19:04:42.645  INFO 10836 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\jdk1.8\bin\;E:\SQL\bin\;;C:\WINDOWS\System32\OpenSSH\;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;;.]
+2018-12-19 19:04:42.717  INFO 10836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-19 19:04:42.717  INFO 10836 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1393 ms
+2018-12-19 19:04:43.207  INFO 10836 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-19 19:04:43.333  INFO 10836 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-12-19 19:04:43.458  INFO 10836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-12-19 19:04:43.501  INFO 10836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 19:04:43.504  INFO 10836 --- [restartedMain] com.cn.ThirdApplication                  : Started ThirdApplication in 2.689 seconds (JVM running for 3.51)
+2018-12-19 19:05:24.568  INFO 10836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-19 19:05:24.569  INFO 10836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-19 19:05:24.575  INFO 10836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-12-19 19:05:24.616  INFO 10836 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-19 19:05:24.705  INFO 10836 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-19 19:05:24.727 DEBUG 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByName            : ==>  Preparing: select * from user where username=? 
+2018-12-19 19:05:24.745 DEBUG 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByName            : ==> Parameters: he(String)
+2018-12-19 19:05:24.762 TRACE 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByName            : <==    Columns: id, username, number, password
+2018-12-19 19:05:24.762 TRACE 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByName            : <==        Row: 1, he, 18852076991, e10adc3949ba59abbe56e057f20f883e
+2018-12-19 19:05:24.764 DEBUG 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByName            : <==      Total: 1
+2018-12-19 19:05:24.767 DEBUG 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByPassword        : ==>  Preparing: select count(*) from user where password=? 
+2018-12-19 19:05:24.768 DEBUG 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByPassword        : ==> Parameters: e10adc3949ba59abbe56e057f20f883e(String)
+2018-12-19 19:05:24.768 TRACE 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByPassword        : <==    Columns: count(*)
+2018-12-19 19:05:24.768 TRACE 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByPassword        : <==        Row: 4
+2018-12-19 19:05:24.770 DEBUG 10836 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findByPassword        : <==      Total: 1
+2018-12-19 19:05:24.815 DEBUG 10836 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 19:05:24.815 DEBUG 10836 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 19:05:24.816 TRACE 10836 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 19:05:24.817 TRACE 10836 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 19:05:24.817 TRACE 10836 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : <==        Row: 13, 何伟志, heweizhi, sdfsd
+2018-12-19 19:05:24.817 DEBUG 10836 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : <==      Total: 2
+2018-12-19 19:05:27.594  INFO 10836 --- [http-nio-8080-exec-3] com.cn.aopTest.aop                       : 模拟目标方法之前
+2018-12-19 19:05:27.596  INFO 10836 --- [http-nio-8080-exec-3] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImpdelete
+2018-12-19 19:05:27.596  INFO 10836 --- [http-nio-8080-exec-3] com.cn.aopTest.aop                       : 参数为：[13]
+2018-12-19 19:05:27.596  INFO 10836 --- [http-nio-8080-exec-3] com.cn.aopTest.aop                       : 被织入的对象com.cn.service.UserServiceImp@7d37e8ec
+2018-12-19 19:05:27.596 DEBUG 10836 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.delete                : ==>  Preparing: delete from message where id=? 
+2018-12-19 19:05:27.597 DEBUG 10836 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.delete                : ==> Parameters: 13(Integer)
+2018-12-19 19:05:27.598 DEBUG 10836 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.delete                : <==    Updates: 1
+2018-12-19 19:05:27.598  INFO 10836 --- [http-nio-8080-exec-3] com.cn.aopTest.aop                       : 模拟日志记录........
+2018-12-19 19:05:27.599  INFO 10836 --- [http-nio-8080-exec-3] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImp delete
+2018-12-19 19:05:27.599  INFO 10836 --- [http-nio-8080-exec-3] com.cn.aopTest.aop                       : 参数为：[13]
+2018-12-19 19:05:27.643 DEBUG 10836 --- [http-nio-8080-exec-4] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 19:05:27.643 DEBUG 10836 --- [http-nio-8080-exec-4] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 19:05:27.644 TRACE 10836 --- [http-nio-8080-exec-4] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 19:05:27.644 TRACE 10836 --- [http-nio-8080-exec-4] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 19:05:27.645 DEBUG 10836 --- [http-nio-8080-exec-4] com.cn.dao.UserDao.findall               : <==      Total: 1
+2018-12-19 19:05:52.881 DEBUG 10836 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.addMessageById        : ==>  Preparing: insert into message(title,time,content) values(?,?,?) 
+2018-12-19 19:05:52.881 DEBUG 10836 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.addMessageById        : ==> Parameters: 何伟志(String), heweizhi(String), jay(String)
+2018-12-19 19:05:52.884 DEBUG 10836 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.addMessageById        : <==    Updates: 1
+2018-12-19 19:05:52.925 DEBUG 10836 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 19:05:52.925 DEBUG 10836 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 19:05:52.926 TRACE 10836 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 19:05:52.926 TRACE 10836 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 19:05:52.926 TRACE 10836 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : <==        Row: 15, 何伟志, heweizhi, jay
+2018-12-19 19:05:52.926 DEBUG 10836 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : <==      Total: 2
+2018-12-19 19:05:57.846  INFO 10836 --- [http-nio-8080-exec-8] com.cn.aopTest.aop                       : 模拟目标方法之前
+2018-12-19 19:05:57.846  INFO 10836 --- [http-nio-8080-exec-8] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImpdelete
+2018-12-19 19:05:57.846  INFO 10836 --- [http-nio-8080-exec-8] com.cn.aopTest.aop                       : 参数为：[15]
+2018-12-19 19:05:57.847  INFO 10836 --- [http-nio-8080-exec-8] com.cn.aopTest.aop                       : 被织入的对象com.cn.service.UserServiceImp@7d37e8ec
+2018-12-19 19:05:57.847 DEBUG 10836 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.delete                : ==>  Preparing: delete from message where id=? 
+2018-12-19 19:05:57.847 DEBUG 10836 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.delete                : ==> Parameters: 15(Integer)
+2018-12-19 19:05:57.875 DEBUG 10836 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.delete                : <==    Updates: 1
+2018-12-19 19:05:57.875  INFO 10836 --- [http-nio-8080-exec-8] com.cn.aopTest.aop                       : 模拟日志记录........
+2018-12-19 19:05:57.875  INFO 10836 --- [http-nio-8080-exec-8] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImp delete
+2018-12-19 19:05:57.875  INFO 10836 --- [http-nio-8080-exec-8] com.cn.aopTest.aop                       : 参数为：[15]
+2018-12-19 19:05:57.890 DEBUG 10836 --- [http-nio-8080-exec-9] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 19:05:57.891 DEBUG 10836 --- [http-nio-8080-exec-9] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 19:05:57.891 TRACE 10836 --- [http-nio-8080-exec-9] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 19:05:57.892 TRACE 10836 --- [http-nio-8080-exec-9] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 19:05:57.892 DEBUG 10836 --- [http-nio-8080-exec-9] com.cn.dao.UserDao.findall               : <==      Total: 1
+2018-12-19 20:42:55.399  INFO 10320 --- [restartedMain] com.cn.ThirdApplication                  : Starting ThirdApplication on DESKTOP-J7NHTAC with PID 10320 (D:\javapro\third02\target\classes started by lenovo in D:\javapro\third02)
+2018-12-19 20:42:55.403 DEBUG 10320 --- [restartedMain] com.cn.ThirdApplication                  : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2018-12-19 20:42:55.405  INFO 10320 --- [restartedMain] com.cn.ThirdApplication                  : No active profile set, falling back to default profiles: default
+2018-12-19 20:42:55.455  INFO 10320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-12-19 20:42:55.455  INFO 10320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2018-12-19 20:42:55.920  WARN 10320 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cn.dao.UserDao]' package. Please check your configuration.
+2018-12-19 20:42:56.658  INFO 10320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-19 20:42:56.681  INFO 10320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-19 20:42:56.681  INFO 10320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-19 20:42:56.689  INFO 10320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\jdk1.8\bin\;E:\SQL\bin\;;C:\WINDOWS\System32\OpenSSH\;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;;.]
+2018-12-19 20:42:56.825  INFO 10320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-19 20:42:56.826  INFO 10320 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1370 ms
+2018-12-19 20:42:57.255  INFO 10320 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-19 20:42:57.361  INFO 10320 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-12-19 20:42:57.465  INFO 10320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-12-19 20:42:57.524  INFO 10320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 20:42:57.528  INFO 10320 --- [restartedMain] com.cn.ThirdApplication                  : Started ThirdApplication in 2.511 seconds (JVM running for 3.489)
+2018-12-19 20:43:08.483  INFO 10320 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-19 20:43:08.483  INFO 10320 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-19 20:43:08.489  INFO 10320 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-12-19 20:43:08.507  INFO 10320 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-19 20:43:08.583  INFO 10320 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-19 20:43:08.603 DEBUG 10320 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 20:43:08.620 DEBUG 10320 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 20:43:08.634 TRACE 10320 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 20:43:08.634 TRACE 10320 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 20:43:08.636 DEBUG 10320 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.findall               : <==      Total: 1
+2018-12-19 20:43:09.182 DEBUG 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 20:43:09.182 DEBUG 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 20:43:09.183 TRACE 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 20:43:09.183 TRACE 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 20:43:09.183 DEBUG 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : <==      Total: 1
+2018-12-19 20:43:16.681 DEBUG 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.addMessageById        : ==>  Preparing: insert into message(title,time,content) values(?,?,?) 
+2018-12-19 20:43:16.681 DEBUG 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.addMessageById        : ==> Parameters: sdfsd(String), sdfsdf(String), sdfsd(String)
+2018-12-19 20:43:16.684 DEBUG 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.addMessageById        : <==    Updates: 1
+2018-12-19 20:43:16.712 DEBUG 10320 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 20:43:16.712 DEBUG 10320 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 20:43:16.713 TRACE 10320 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 20:43:16.713 TRACE 10320 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 20:43:16.713 TRACE 10320 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : <==        Row: 16, sdfsd, sdfsdf, sdfsd
+2018-12-19 20:43:16.713 DEBUG 10320 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.findall               : <==      Total: 2
+2018-12-19 20:43:22.342 DEBUG 10320 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.addMessageById        : ==>  Preparing: insert into message(title,time,content) values(?,?,?) 
+2018-12-19 20:43:22.342 DEBUG 10320 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.addMessageById        : ==> Parameters: sdfsd(String), dsfsdf(String), sdfsd(String)
+2018-12-19 20:43:22.345 DEBUG 10320 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.addMessageById        : <==    Updates: 1
+2018-12-19 20:43:22.379 DEBUG 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 20:43:22.379 DEBUG 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 20:43:22.380 TRACE 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 20:43:22.380 TRACE 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 20:43:22.381 TRACE 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : <==        Row: 16, sdfsd, sdfsdf, sdfsd
+2018-12-19 20:43:22.381 TRACE 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : <==        Row: 17, sdfsd, dsfsdf, sdfsd
+2018-12-19 20:43:22.381 DEBUG 10320 --- [http-nio-8080-exec-3] com.cn.dao.UserDao.findall               : <==      Total: 3
+2018-12-19 20:43:27.698 DEBUG 10320 --- [http-nio-8080-exec-5] com.cn.dao.UserDao.addMessageById        : ==>  Preparing: insert into message(title,time,content) values(?,?,?) 
+2018-12-19 20:43:27.699 DEBUG 10320 --- [http-nio-8080-exec-5] com.cn.dao.UserDao.addMessageById        : ==> Parameters: fsdfs(String), sdfsdf(String), dfs(String)
+2018-12-19 20:43:27.700 DEBUG 10320 --- [http-nio-8080-exec-5] com.cn.dao.UserDao.addMessageById        : <==    Updates: 1
+2018-12-19 20:43:27.709 DEBUG 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 20:43:27.710 DEBUG 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 20:43:27.710 TRACE 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 20:43:27.710 TRACE 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 20:43:27.711 TRACE 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.findall               : <==        Row: 16, sdfsd, sdfsdf, sdfsd
+2018-12-19 20:43:27.711 TRACE 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.findall               : <==        Row: 17, sdfsd, dsfsdf, sdfsd
+2018-12-19 20:43:27.711 TRACE 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.findall               : <==        Row: 18, fsdfs, sdfsdf, dfs
+2018-12-19 20:43:27.711 DEBUG 10320 --- [http-nio-8080-exec-6] com.cn.dao.UserDao.findall               : <==      Total: 4
+2018-12-19 20:43:29.180  INFO 10320 --- [http-nio-8080-exec-7] com.cn.aopTest.aop                       : 模拟目标方法之前
+2018-12-19 20:43:29.181  INFO 10320 --- [http-nio-8080-exec-7] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImpdelete
+2018-12-19 20:43:29.181  INFO 10320 --- [http-nio-8080-exec-7] com.cn.aopTest.aop                       : 参数为：[17]
+2018-12-19 20:43:29.181  INFO 10320 --- [http-nio-8080-exec-7] com.cn.aopTest.aop                       : 被织入的对象com.cn.service.UserServiceImp@7afddd96
+2018-12-19 20:43:29.182 DEBUG 10320 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.delete                : ==>  Preparing: delete from message where id=? 
+2018-12-19 20:43:29.182 DEBUG 10320 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.delete                : ==> Parameters: 17(Integer)
+2018-12-19 20:43:29.183 DEBUG 10320 --- [http-nio-8080-exec-7] com.cn.dao.UserDao.delete                : <==    Updates: 1
+2018-12-19 20:43:29.183  INFO 10320 --- [http-nio-8080-exec-7] com.cn.aopTest.aop                       : 模拟日志记录........
+2018-12-19 20:43:29.183  INFO 10320 --- [http-nio-8080-exec-7] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImp delete
+2018-12-19 20:43:29.183  INFO 10320 --- [http-nio-8080-exec-7] com.cn.aopTest.aop                       : 参数为：[17]
+2018-12-19 20:43:29.223 DEBUG 10320 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 20:43:29.223 DEBUG 10320 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 20:43:29.224 TRACE 10320 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 20:43:29.224 TRACE 10320 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 20:43:29.224 TRACE 10320 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.findall               : <==        Row: 16, sdfsd, sdfsdf, sdfsd
+2018-12-19 20:43:29.224 TRACE 10320 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.findall               : <==        Row: 18, fsdfs, sdfsdf, dfs
+2018-12-19 20:43:29.224 DEBUG 10320 --- [http-nio-8080-exec-8] com.cn.dao.UserDao.findall               : <==      Total: 3
+2018-12-19 20:43:29.952  INFO 10320 --- [http-nio-8080-exec-9] com.cn.aopTest.aop                       : 模拟目标方法之前
+2018-12-19 20:43:29.952  INFO 10320 --- [http-nio-8080-exec-9] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImpdelete
+2018-12-19 20:43:29.953  INFO 10320 --- [http-nio-8080-exec-9] com.cn.aopTest.aop                       : 参数为：[18]
+2018-12-19 20:43:29.953  INFO 10320 --- [http-nio-8080-exec-9] com.cn.aopTest.aop                       : 被织入的对象com.cn.service.UserServiceImp@7afddd96
+2018-12-19 20:43:29.953 DEBUG 10320 --- [http-nio-8080-exec-9] com.cn.dao.UserDao.delete                : ==>  Preparing: delete from message where id=? 
+2018-12-19 20:43:29.953 DEBUG 10320 --- [http-nio-8080-exec-9] com.cn.dao.UserDao.delete                : ==> Parameters: 18(Integer)
+2018-12-19 20:43:29.954 DEBUG 10320 --- [http-nio-8080-exec-9] com.cn.dao.UserDao.delete                : <==    Updates: 1
+2018-12-19 20:43:29.954  INFO 10320 --- [http-nio-8080-exec-9] com.cn.aopTest.aop                       : 模拟日志记录........
+2018-12-19 20:43:29.954  INFO 10320 --- [http-nio-8080-exec-9] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImp delete
+2018-12-19 20:43:29.954  INFO 10320 --- [http-nio-8080-exec-9] com.cn.aopTest.aop                       : 参数为：[18]
+2018-12-19 20:43:29.999 DEBUG 10320 --- [http-nio-8080-exec-10] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 20:43:29.999 DEBUG 10320 --- [http-nio-8080-exec-10] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 20:43:30.000 TRACE 10320 --- [http-nio-8080-exec-10] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 20:43:30.000 TRACE 10320 --- [http-nio-8080-exec-10] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 20:43:30.000 TRACE 10320 --- [http-nio-8080-exec-10] com.cn.dao.UserDao.findall               : <==        Row: 16, sdfsd, sdfsdf, sdfsd
+2018-12-19 20:43:30.001 DEBUG 10320 --- [http-nio-8080-exec-10] com.cn.dao.UserDao.findall               : <==      Total: 2
+2018-12-19 20:43:30.638  INFO 10320 --- [http-nio-8080-exec-2] com.cn.aopTest.aop                       : 模拟目标方法之前
+2018-12-19 20:43:30.638  INFO 10320 --- [http-nio-8080-exec-2] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImpdelete
+2018-12-19 20:43:30.638  INFO 10320 --- [http-nio-8080-exec-2] com.cn.aopTest.aop                       : 参数为：[16]
+2018-12-19 20:43:30.638  INFO 10320 --- [http-nio-8080-exec-2] com.cn.aopTest.aop                       : 被织入的对象com.cn.service.UserServiceImp@7afddd96
+2018-12-19 20:43:30.638 DEBUG 10320 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.delete                : ==>  Preparing: delete from message where id=? 
+2018-12-19 20:43:30.638 DEBUG 10320 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.delete                : ==> Parameters: 16(Integer)
+2018-12-19 20:43:30.639 DEBUG 10320 --- [http-nio-8080-exec-2] com.cn.dao.UserDao.delete                : <==    Updates: 1
+2018-12-19 20:43:30.640  INFO 10320 --- [http-nio-8080-exec-2] com.cn.aopTest.aop                       : 模拟日志记录........
+2018-12-19 20:43:30.640  INFO 10320 --- [http-nio-8080-exec-2] com.cn.aopTest.aop                       : 目标方法为：com.cn.service.UserServiceImp delete
+2018-12-19 20:43:30.640  INFO 10320 --- [http-nio-8080-exec-2] com.cn.aopTest.aop                       : 参数为：[16]
+2018-12-19 20:43:30.647 DEBUG 10320 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findall               : ==>  Preparing: select * from message 
+2018-12-19 20:43:30.648 DEBUG 10320 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findall               : ==> Parameters: 
+2018-12-19 20:43:30.648 TRACE 10320 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findall               : <==    Columns: id, title, time, content
+2018-12-19 20:43:30.648 TRACE 10320 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findall               : <==        Row: 7, 何伟志, heweizhi, Jay
+2018-12-19 20:43:30.649 DEBUG 10320 --- [http-nio-8080-exec-1] com.cn.dao.UserDao.findall               : <==      Total: 1
+2018-12-19 20:53:36.253  INFO 15592 --- [restartedMain] com.cn.ThirdApplication                  : Starting ThirdApplication on DESKTOP-J7NHTAC with PID 15592 (D:\javapro\third02\target\classes started by lenovo in D:\javapro\third02)
+2018-12-19 20:53:36.256 DEBUG 15592 --- [restartedMain] com.cn.ThirdApplication                  : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2018-12-19 20:53:36.257  INFO 15592 --- [restartedMain] com.cn.ThirdApplication                  : No active profile set, falling back to default profiles: default
+2018-12-19 20:53:36.298  INFO 15592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-12-19 20:53:36.298  INFO 15592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2018-12-19 20:53:36.740  WARN 15592 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cn.dao.UserDao]' package. Please check your configuration.
+2018-12-19 20:53:37.516  INFO 15592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-19 20:53:37.533  INFO 15592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-19 20:53:37.533  INFO 15592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-19 20:53:37.539  INFO 15592 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\jdk1.8\bin\;E:\SQL\bin\;;C:\WINDOWS\System32\OpenSSH\;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;;.]
+2018-12-19 20:53:37.619  INFO 15592 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-19 20:53:37.619  INFO 15592 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1321 ms
+2018-12-19 20:53:38.191  INFO 15592 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-19 20:53:38.347  INFO 15592 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-12-19 20:53:38.487  INFO 15592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-12-19 20:53:38.538  INFO 15592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 20:53:38.541  INFO 15592 --- [restartedMain] com.cn.ThirdApplication                  : Started ThirdApplication in 2.647 seconds (JVM running for 3.913)
+2018-12-19 20:53:49.966  INFO 15592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-19 20:53:49.967  INFO 15592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-19 20:53:49.975  INFO 15592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-12-19 20:54:31.741  INFO 15592 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-19 20:54:32.154  INFO 15592 --- [restartedMain] com.cn.ThirdApplication                  : Starting ThirdApplication on DESKTOP-J7NHTAC with PID 15592 (D:\javapro\third02\target\classes started by lenovo in D:\javapro\third02)
+2018-12-19 20:54:32.154 DEBUG 15592 --- [restartedMain] com.cn.ThirdApplication                  : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2018-12-19 20:54:32.155  INFO 15592 --- [restartedMain] com.cn.ThirdApplication                  : No active profile set, falling back to default profiles: default
+2018-12-19 20:54:32.367  WARN 15592 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cn.dao.UserDao]' package. Please check your configuration.
+2018-12-19 20:54:32.559  INFO 15592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-19 20:54:32.560  INFO 15592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-19 20:54:32.561  INFO 15592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-19 20:54:32.596  INFO 15592 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-19 20:54:32.597  INFO 15592 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 439 ms
+2018-12-19 20:54:32.770  INFO 15592 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-19 20:54:32.838  INFO 15592 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-12-19 20:54:32.944  INFO 15592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-12-19 20:54:32.972  INFO 15592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 20:54:32.973  INFO 15592 --- [restartedMain] com.cn.ThirdApplication                  : Started ThirdApplication in 0.855 seconds (JVM running for 58.344)
+2018-12-19 20:54:32.976  INFO 15592 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-12-19 21:15:01.832  INFO 15592 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-19 21:15:01.833  INFO 15592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-19 21:15:01.845  INFO 15592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2018-12-19 21:29:11.607  INFO 14180 --- [restartedMain] com.cn.ThirdApplication                  : Starting ThirdApplication on DESKTOP-J7NHTAC with PID 14180 (D:\javapro\third02\target\classes started by lenovo in D:\javapro\third02)
+2018-12-19 21:29:11.610 DEBUG 14180 --- [restartedMain] com.cn.ThirdApplication                  : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2018-12-19 21:29:11.612  INFO 14180 --- [restartedMain] com.cn.ThirdApplication                  : No active profile set, falling back to default profiles: default
+2018-12-19 21:29:11.680  INFO 14180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-12-19 21:29:11.680  INFO 14180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2018-12-19 21:29:12.168  WARN 14180 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cn.dao.UserDao]' package. Please check your configuration.
+2018-12-19 21:29:13.092  INFO 14180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-19 21:29:13.109  INFO 14180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-19 21:29:13.109  INFO 14180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-19 21:29:13.114  INFO 14180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\jdk1.8\bin\;E:\SQL\bin\;;C:\WINDOWS\System32\OpenSSH\;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;;.]
+2018-12-19 21:29:13.203  INFO 14180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-19 21:29:13.203  INFO 14180 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1523 ms
+2018-12-19 21:29:13.715  INFO 14180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-19 21:29:13.851  INFO 14180 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-12-19 21:29:13.982  INFO 14180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-12-19 21:29:14.026  INFO 14180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 21:29:14.029  INFO 14180 --- [restartedMain] com.cn.ThirdApplication                  : Started ThirdApplication in 2.888 seconds (JVM running for 4.31)
+2018-12-19 21:29:19.288  INFO 14180 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-19 21:29:19.288  INFO 14180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-19 21:29:19.296  INFO 14180 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2018-12-19 21:29:57.958  INFO 10180 --- [restartedMain] com.cn.ThirdApplication                  : Starting ThirdApplication on DESKTOP-J7NHTAC with PID 10180 (D:\javapro\third02\target\classes started by lenovo in D:\javapro\third02)
+2018-12-19 21:29:57.961 DEBUG 10180 --- [restartedMain] com.cn.ThirdApplication                  : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2018-12-19 21:29:57.962  INFO 10180 --- [restartedMain] com.cn.ThirdApplication                  : No active profile set, falling back to default profiles: default
+2018-12-19 21:29:58.004  INFO 10180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-12-19 21:29:58.004  INFO 10180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2018-12-19 21:29:58.702  WARN 10180 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cn.dao.UserDao]' package. Please check your configuration.
+2018-12-19 21:29:59.510  INFO 10180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-19 21:29:59.527  INFO 10180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-19 21:29:59.527  INFO 10180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-19 21:29:59.534  INFO 10180 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\jdk1.8\bin\;E:\SQL\bin\;;C:\WINDOWS\System32\OpenSSH\;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;;.]
+2018-12-19 21:29:59.638  INFO 10180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-19 21:29:59.639  INFO 10180 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1634 ms
+2018-12-19 21:30:00.104  INFO 10180 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-19 21:30:00.230  INFO 10180 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-12-19 21:30:00.355  INFO 10180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-12-19 21:30:00.399  INFO 10180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-19 21:30:00.402  INFO 10180 --- [restartedMain] com.cn.ThirdApplication                  : Started ThirdApplication in 2.851 seconds (JVM running for 4.425)
+2018-12-19 21:30:02.970  INFO 10180 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-19 21:30:02.971  INFO 10180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-19 21:30:02.983  INFO 10180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 映射文件中的namespace是用于绑定Dao接口的，即面向接口编程 -->
+<mapper namespace="com.cn.dao.MessageDao">
+
+<!-- 查询所有的消息体信息 -->
+<select id="findall" resultType="message">
+    select * from message order by lastTime desc ,time
+</select>
+        <!-- 根据id删除消息内容-->
+<delete id="delete" parameterType="Integer">
+delete from message where id=#{id}
+</delete>
+        <!-- 根据id删除所有评论内容-->
+<delete id="deleteDiscuss" parameterType="Integer">
+delete from discuss where id=#{id}
+</delete>
+        <!-- 根据id修改消息体中的消息内容//id,title,content,details-->
+<update id="update">
+update message set title=#{title},content=#{content},details=#{details},time=#{date} where id=#{id}
+</update>
+        <!-- 根据id查询出所有的消息-->
+<select id="findMessageById" parameterType="Integer" resultType="message">
+select * from message where id = #{id}
+</select>
+        <!-- 添加消息内容 -->
+<insert id="addMessageById">
+insert into message(username, title, time, content, details)
+values(#{username},#{title},#{date},#{content},#{details})
+</insert>
+        <!--根据用户名和时间查询相应的Id-->
+<select id="findIdByUsernameAndDate" resultType="Integer">
+select id from message where username=#{username} and time=#{date}
+</select>
+        <!-- 新增添加最新评论时间 -->
+<update id="addLastTimeIntoMessage">
+update message set lastTime=#{date2} where id=#{id}
+</update>
+        <!--根据用户名查消息-->
+<select id="findMyMessage" parameterType="String" resultType="message">
+select * from message where message.username=#{username} order by time
+</select>
+    <!--根据id查询评论-->
+    <select id="findRemarkById" resultType="discuss">
+        select *  from discuss
+        where id=#{id}
+    </select>
+    <!--插入评语，时间等-->
+    <insert id="insertRemark">
+        insert into discuss(id,title,remark,username,time)
+        values(#{id},#{title},#{remark},#{username},#{date})
+    </insert>
+    <!--根据文章名查询评论数目-->
+    <select id="findRemarksById" resultType="Integer">
+		select count(remark) from discuss where id = #{id}
+	</select>
+    <!--根据文章名查询评论最新时间-->
+    <select id="findLastTime" resultType="Date">
+		select MAX(TIME) from discuss where id = #{id}
+	</select>
+</mapper>

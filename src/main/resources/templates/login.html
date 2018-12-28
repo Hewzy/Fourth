@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+</head>
+<body>
+<!-- 登陆界面 -->
+<center>
+	<form th:action="@{/login}" method="post">    <!-- 提交表单到Login登陆判断 -->
+		用户名：<input type="text" name="username" id="username" /><br/>
+		密码：<input type="password" name="password" id="password" /><br/>
+		<input type="button" value="提交" onclick="checkUser()"/>
+		<a href="register">点击注册</a> <!-- 跳转注册页面 -->
+	</form>
+</center>
+<!--不可以写成static/js，否则访问不到-->
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/my_js/login.js"></script>
+</body>
+</html>

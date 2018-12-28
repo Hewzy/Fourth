@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>内容</title>
+
+</head>
+<body>
+<table>
+    <tr>
+        <td><h2>您好;</h2></td>
+        <td><h2 th:text="${USER}"></h2></td>
+        <td><a th:href="@{/logoff}"><h4>点击注销</h4></a></td>
+    </tr>
+    <tr>
+        <td><a th:href="@{/myMessage}"><h4>我的文章</h4></a></td>
+        <td><a th:href="@{/messageAll}"><h4>文章总部</h4></a></td>
+        <td><a th:href="@{/roleEdit}"><h4>人员管理</h4></a></td>
+    </tr>
+</table>
+<h3><div th:text="${title}" id="title"></div></h3>
+<div th:hidden="1" th:text="${ID}" id="id"></div>
+<div th:text="${detail}"></div>
+<table>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr>
+        <td><h4>评论内容</h4></td>
+    </tr>
+</table>
+<table>
+    <div th:each="tmp:${discuss}">
+    <tr>
+        <td><center th:text="${tmp.username}"></center></td>
+        <td></td>
+        <td>:</td>
+        <td th:text="${tmp.remark}"></td>
+        <td></td>
+        <td>评论时间：</td>
+        <td th:text="${tmp.time}"></td>
+    </tr>
+</div>
+</table>
+<table>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr>
+        <td><h4>发表评论</h4></td>
+    </tr>
+</table>
+<textarea th:rows="15" th:cols="80" id="remark"></textarea><br />
+<input type="button" value="提交" onclick="editRemark()"/>
+</body>
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/my_js/messageDetail.js"></script>
+</html>

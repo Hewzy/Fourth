@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+</head>
+<body>
+<!-- 消息体展示页面 -->
+<table>
+    <tr>
+        <td><h2>您好;</h2></td>
+        <td><h2 th:text="${USER}"></h2></td>
+        <td><a th:href="@{/logoff}"><h4>点击注销</h4></a></td>
+    </tr>
+    <tr>
+        <td><a th:href="@{/myMessage}"><h4>我的文章</h4></a></td>
+        <td><a th:href="@{/messageAll}"><h4>文章总部</h4></a></td>
+        <td><a th:href="@{/roleEdit}"><h4>人员管理</h4></a></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>id</td>
+        <td>文章</td>
+        <td>时间</td>
+        <td>备注</td>
+        <td>评论数</td>
+        <td>最后评论时间</td>
+    </tr>
+    <!-- 列出所有的信息 -->
+    <div th:each="temp:${list2}">
+        <tr>
+            <td th:text=" ${temp.id }">id</td>
+            <td><a th:href="@{/detail(id=${temp.id}, details=${temp.details},title=${temp.title})}"
+                   th:text=" ${temp.title }">title</a></td>
+            <td th:text=" ${temp.time }">time</td>
+            <td th:text=" ${temp.content }">content</td>
+            <td th:text="${userService.findRemarksById(temp.id)}">remarks</td>
+            <td th:text="${userService.findLastTime(temp.id)}">lastTime</td>
+            <td><a th:href="@{/myDelete(id=${temp.id })}">删除</a>|<a th:href="@{/editMessage(id=${temp.id })}">修改</a></td>
+        </tr>
+    </div>
+
+    <tr>
+        <td colspan="6" style="text-align: left;"><a th:href="@{add}">添加信息</a></td>
+    </tr>
+</table>
+</body>
+</html>
